@@ -15,7 +15,7 @@ def help_pannel(_, START: Union[bool, int] = None):
             callback_data=f"settingsback_helper",
         ),
         InlineKeyboardButton(
-            text="ᴍᴏʀᴇ",
+            text="ᴏᴡɴᴇʀ",
             url=f"t.me/Kalakar_Sangram",
         ),
         InlineKeyboardButton(
