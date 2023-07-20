@@ -38,12 +38,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
@@ -66,7 +60,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Red_Wine_Op"
             )
         ],
     ]
@@ -102,12 +96,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
@@ -130,7 +118,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Red_Wine_Op"
             )
         ],
     ]
@@ -141,10 +129,10 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="ᴜᴘᴅᴀᴛᴇs", url=config.SUPPORT_CHANNEL
             )
         ],
         [
@@ -168,11 +156,6 @@ def stream_markup(_, videoid, chat_id):
                 text="▢",
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
-            )
         ],
     ]
     return buttons
@@ -182,10 +165,10 @@ def telegram_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="ᴜᴘᴅᴀᴛᴇs", url=config.SUPPORT_CHANNEL
             )
         ],
         [
@@ -210,11 +193,7 @@ def telegram_markup(_, videoid, chat_id):
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
-            )
-        ],
+
     ]
     return buttons
 
@@ -349,10 +328,10 @@ def queue_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="ᴜᴘᴅᴀᴛᴇs", url=config.SUPPORT_CHANNEL
             )
         ],
         [
@@ -376,11 +355,6 @@ def queue_markup(_, videoid, chat_id):
                 text="▢",
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
-            )
         ],
     ]
     return buttons
