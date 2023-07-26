@@ -118,7 +118,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Red_Wine_Op"
+                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/the_iconic_house"
             )
         ],
     ]
